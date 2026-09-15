@@ -8,6 +8,23 @@
     <!-- Основной минифицированный CSS -->
     <link rel="preload" href="css/site.min.css" as="style">
     <link rel="stylesheet" href="css/site.min.css">
+    <!-- Критический CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0" defer></script>
     <script src="js/search.min.js" defer></script>
@@ -48,22 +65,11 @@
         
        <div class="photos">
     <div class="photo1">
-        <img id="i1"
-             src="images/танц2.webp" width="800" height="500"
-             alt="танец"
-             loading="lazy">
+        <img id="i1" src="images/танц2.webp" width="800" height="500" alt="танец" loading="lazy">
     </div>
-
     <div class="photo2">
-        <img id="i2"
-             src="images/танц1.webp" width="800" height="500"
-             alt="танец"
-             loading="lazy">
-
-        <img id="i3"
-             src="images/танц3.webp" width="800" height="500"
-             alt="танец"
-             loading="lazy">
+        <img id="i2" src="images/танц1.webp" width="800" height="500" alt="танец" loading="lazy">
+        <img id="i3" src="images/танц3.webp" width="800" height="500" alt="танец" loading="lazy">
     </div>
 </div>
 
