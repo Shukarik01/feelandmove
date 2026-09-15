@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Танцевальная студия Feel&Move</title>
-    <link rel="stylesheet" href="index.html">
-    <LINK REL="SHORTCUT ICON" HREF="images/logoty1.png">
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="shortcut icon" href="images/logoty1.png">
+    <!-- Основной минифицированный CSS -->
+    <link rel="preload" href="css/site.min.css" as="style">
+    <link rel="stylesheet" href="css/site.min.css">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0" defer></script>
+    <script src="js/search.min.js" defer></script>
 </head>
 <body> 
     <header class="header">
@@ -200,9 +204,5 @@
             </div>
         </div>
     </footer>
-    <!-- Подключаем Fuse.js с CDN -->
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
-<!-- Наш скрипт поиска -->
-<script src="js/search.js"></script>
 </body>
 </html>
