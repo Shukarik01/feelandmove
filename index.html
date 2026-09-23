@@ -129,87 +129,140 @@
 </div>
     </main>
     <!--Что-то типа футера-->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <!-- Колонка 1 Лого и описание -->
-                <div class="footer-col footer-about">
-                    <div class="footer-logo">
-                        <a href="index.html" target="_blank">
-                            <img src="images/logotip.svg" alt="Feel&Move логотип">
-                        </a>
-                    </div>
-                    <p class="footer-description">
-                        Танцевальная студия, где рождаются эмоции и движение. Чувствуй ритм, двигай мир!
-                    </p>
-                    <div class="footer-social">
-                        <a href="https://vk.com/fer_vonn" class="social-link" aria-label="VK">ВК</a>
-                        <a href="https://t.me/g8soisp" class="social-link" aria-label="Telegram">TG</a>
-                    </div>
+    <footer class="footer" itemscope itemtype="https://schema.org/Organization">
+    <div class="footer-container">
+        <!-- Название организации -->
+        <meta itemprop="name" content="Feel & Move">
+        <meta itemprop="url" content="https://feelmove.ru">
+        <div class="footer-grid">
+            <!-- Колонка 1: Лого и описание -->
+            <div class="footer-col footer-about">
+                <div class="footer-logo">
+                    <a href="index.html" target="_blank">
+                        <img src="images/logotip.svg" alt="Feel & Move логотип" itemprop="logo">
+                    </a>
                 </div>
-                <!-- Колонка 2 Навигация -->
-                <div class="footer-col">
-                    <h3 class="footer-title">НАВИГАЦИЯ</h3>
-                    <ul class="footer-menu">
-                        <li><a href="teachers/couchmain.html">Преподаватели</a></li>
-                        <li><a href="styles/DanceStyle.html">Направления</a></li>
-                        <li><a href="cost/cost.html">Стоимость</a></li>
-                        <li><a href="events/events.html">События</a></li>
-                        <li><a href="commonquestion/commonquestions.html">Частые вопросы</a></li>
-                        <li><a href="contacts/contacts.html">Контакты</a></li>
-                    </ul>
-                </div>
-                <!-- Колонка 3 Контакты -->
-                <div class="footer-col">
-                    <h3 class="footer-title">КОНТАКТЫ</h3>
-                    <ul class="footer-contact">
-                        <li class="contact-item">
-                            <span class="contact-icon"></span>
-                            <span>г. Воронеж, Ленинский проспект, 14</span>
-                        </li>
-                        <li class="contact-item">
-                            <span class="contact-icon"></span>
-                            <a href="tel:+79991234567">+7(929)000-95-54</a>
-                        </li>
-                        <li class="contact-item">
-                            <span class="contact-icon"></span>
-                            <a href="mailto:info@feelmove.ru">info@feelmove.ru</a>
-                        </li>
-                        <li class="contact-item">
-                            <span class="contact-icon"></span>
-                            <span>Пн-Пт: 10:00 - 22:00<br>Сб-Вс: 12:00 - 20:00</span>
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- Колонка 4 Пробное занятие -->
-                <div class="footer-col">
-                    <h3 class="footer-title">ПРОБНОЕ ЗАНЯТИЕ</h3>
-                    <p class="footer-trial-text">
-                        Запишитесь на первое занятие со скидкой 50%
-                    </p>
-                    <a href="contacts/contacts.html" class="footer-button">Записаться</a>
-                    <div class="footer-payment">
-                        <span>Принимаем к оплате:</span>
-                        <div class="payment-icons">
-                            <span class="payment-icon">Visa</span>
-                            <span class="payment-icon">Mastercard</span>
-                            <span class="payment-icon">МИР</span>
-                        </div>
-                    </div>
+                <p class="footer-description" itemprop="description"> Танцевальная студия, где рождаются эмоции и движение. Чувствуй ритм, двигай мир!</p>
+                <div class="footer-social">
+                    <a href="https://vk.com/fer_vonn" class="social-link" aria-label="VK" itemprop="sameAs">ВК</a>
+                    <a href="https://t.me/g8soisp" class="social-link" aria-label="Telegram" itemprop="sameAs"> TG</a>
                 </div>
             </div>
-            <!-- Нижняя часть футера -->
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    © 2026 Feel & Move. Все права защищены.
-                </div>
-                <div class="footer-legal">
-                    <a href="legal/legal.html">Политика конфиденциальности</a>
-                    <a href="legal/legal.html">Пользовательское соглашение</a>
+            <!-- Колонка 2: Навигация -->
+            <div class="footer-col">
+                <h3 class="footer-title">НАВИГАЦИЯ</h3>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="teachers/couchmain.html">Преподаватели</a>
+                    </li>
+                    <li>
+                        <a href="styles/DanceStyle.html">Направления </a>
+                    </li>
+                    <li>
+                        <a href="cost/cost.html">Стоимость</a>
+                    </li>
+                    <li>
+                        <a href="events/events.html">События</a>
+                    </li>
+                    <li>
+                        <a href="commonquestion/commonquestions.html">Частые вопросы</a>
+                    </li>
+                    <li>
+                        <a href="contacts/contacts.html"> Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Колонка 3: Контакты -->
+            <div class="footer-col">
+                <h3 class="footer-title">КОНТАКТЫ</h3>
+                <ul class="footer-contact">
+                    <!-- Адрес -->
+                    <li class="contact-item">
+                        <span class="contact-icon"></span>
+                        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span>
+                                г. <span itemprop="addressLocality">Воронеж</span>,
+                                <span itemprop="streetAddress">
+                                    Ленинский проспект, 14
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                    <!-- Телефон -->
+                    <li class="contact-item">
+                        <span class="contact-icon"></span>
+                        <a href="tel:+79290009554" itemprop="telephone"> +7(929)000-95-54</a>
+                    </li>
+                    <!-- Email -->
+                    <li class="contact-item">
+                        <span class="contact-icon"></span>
+                        <a href="mailto:info@feelmove.ru"><span itemprop="email">info@feelmove.ru</span></a>
+                    </li>
+                    <!-- Часы работы -->
+                    <li class="contact-item">
+                        <span class="contact-icon"></span>
+                        <div>
+                            <span>
+                                Пн-Пт:
+                                <time itemprop="opens" datetime="10:00">
+                                    10:00
+                                </time>
+                                -
+                                <time itemprop="closes" datetime="22:00">
+                                    22:00
+                                </time>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                Сб-Вс:
+                                <time itemprop="opens" datetime="12:00"> 12:00</time>
+                                -
+                                <time itemprop="closes" datetime="20:00">20:00</time>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Колонка 4: Пробное занятие -->
+            <div class="footer-col">
+                <h3 class="footer-title">
+                    ПРОБНОЕ ЗАНЯТИЕ
+                </h3>
+                <p class="footer-trial-text">
+                    Запишитесь на первое занятие со скидкой 50%
+                </p>
+                <a href="contacts/contacts.html"
+                   class="footer-button">
+                    Записаться
+                </a>
+                <div class="footer-payment">
+                    <span>
+                        Принимаем к оплате:
+                    </span>
+                    <div class="payment-icons">
+                        <span class="payment-icon">Visa</span>
+                        <span class="payment-icon">Mastercard</span>
+                        <span class="payment-icon">МИР</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <!-- Нижняя часть футера -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                © 2026 Feel & Move. Все права защищены.
+            </div>
+            <div class="footer-legal">
+                <a href="legal/legal.html">
+                    Политика конфиденциальности
+                </a>
+                <a href="legal/legal.html">
+                    Пользовательское соглашение
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
