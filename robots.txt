@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /feelandmove/admin/
+Disallow: /feelandmove/cgi-bin/
+Disallow: /feelandmove/tmp/
+Disallow: /feelandmove/*.pdf$
+
+Allow: /feelandmove/
+
+Sitemap: https://shukarik01.github.io/feelandmove/sitemap.xml
